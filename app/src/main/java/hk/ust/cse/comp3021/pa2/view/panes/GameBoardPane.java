@@ -32,10 +32,12 @@ public class GameBoardPane extends GridPane implements GameUIComponent {
      */
     public void showGameState(GameState gameState) {
         // TODO: ok Update the content based on the state of the game board.
-        GridPane x = (GridPane) this.getChildren();
+        GridPane x = new GridPane();
         createGameBoardPane(gameState.getGameBoard().getNumRows(),
                             gameState.getGameBoard().getNumCols(),
                             x, gameState.getGameBoard());
+
+        this.getChildren().add(x);
 
     }
     //helper func

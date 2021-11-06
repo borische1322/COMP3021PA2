@@ -110,13 +110,15 @@ public class GameControlPane extends GridPane implements GameUIComponent {
      */
     private void addMoveButtons() {
         // TODO:? Place the move buttons to appropriate position of the pane.
-        GridPane a = (GridPane) this.getChildren();
+        GridPane a = new GridPane();
         a.setAlignment(Pos.CENTER);
         a.add(upButton, 2, 1);
         a.add(leftButton, 1, 2);
         a.add(rightButton, 3,2);
         a.add(downButton, 2, 3);
         a.add(undoButton,2,4);
+
+        this.getChildren().add(a);
     }
 
     /**

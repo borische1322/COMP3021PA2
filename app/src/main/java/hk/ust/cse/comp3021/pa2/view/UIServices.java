@@ -83,7 +83,7 @@ public class UIServices {
      */
     public static void showLoadGameErrorDialog() {
         // TODO: ok Show a dialog using the provided strings above.
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(LOAD_GAME_ERROR_ALERT_TITLE);
         alert.setHeaderText("Message");
         alert.setContentText(LOAD_GAME_ERROR_ALERT_CONTENT_TEXT);
@@ -100,7 +100,7 @@ public class UIServices {
      */
     public static void showFileNotSelectedDialog() {
         // TODO: ok Show a dialog using the provided strings above.
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle(LOAD_GAME_CANCEL_ALERT_TITLE);
         alert.setHeaderText("Message");
         alert.setContentText(LOAD_GAME_CANCEL_ALERT_CONTENT_TEXT);

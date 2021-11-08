@@ -2,14 +2,10 @@ package hk.ust.cse.comp3021.pa2.view.panes;
 
 import hk.ust.cse.comp3021.pa2.model.GameBoard;
 import hk.ust.cse.comp3021.pa2.model.GameState;
-import hk.ust.cse.comp3021.pa2.util.NotImplementedException;
 import hk.ust.cse.comp3021.pa2.view.GameUIComponent;
 import hk.ust.cse.comp3021.pa2.view.controls.GameCell;
 import javafx.geometry.Pos;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link javafx.scene.layout.Pane} for displaying the status of {@link hk.ust.cse.comp3021.pa2.model.GameBoard}.

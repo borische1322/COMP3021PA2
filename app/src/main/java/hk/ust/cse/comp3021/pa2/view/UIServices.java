@@ -3,13 +3,8 @@ package hk.ust.cse.comp3021.pa2.view;
 import hk.ust.cse.comp3021.pa2.InertiaFxGame;
 import hk.ust.cse.comp3021.pa2.model.GameState;
 import hk.ust.cse.comp3021.pa2.util.GameStateSerializer;
-import hk.ust.cse.comp3021.pa2.util.NotImplementedException;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

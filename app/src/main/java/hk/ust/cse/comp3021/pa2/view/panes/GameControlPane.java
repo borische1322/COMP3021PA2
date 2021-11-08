@@ -3,7 +3,6 @@ package hk.ust.cse.comp3021.pa2.view.panes;
 import hk.ust.cse.comp3021.pa2.controller.GameController;
 import hk.ust.cse.comp3021.pa2.model.Direction;
 import hk.ust.cse.comp3021.pa2.model.MoveResult;
-import hk.ust.cse.comp3021.pa2.util.NotImplementedException;
 import hk.ust.cse.comp3021.pa2.view.GameUIComponent;
 import hk.ust.cse.comp3021.pa2.view.events.MoveEvent;
 import javafx.beans.property.ObjectProperty;
@@ -82,7 +81,9 @@ public class GameControlPane extends GridPane implements GameUIComponent {
         GridPane.setFillWidth(undoButton, true);
 
         // TODO:? Add event handler for the click event of the undo button.
-        this.undoButton.setOnAction(e -> {performUndo();});
+        this.undoButton.setOnAction(e -> {
+            performUndo();
+        });
     }
 
     /**
@@ -90,10 +91,18 @@ public class GameControlPane extends GridPane implements GameUIComponent {
      */
     private void setMoveButtonsHandler() {
         // TODO:? Add event handler for the click event of the move buttons.
-        this.upButton.setOnAction(e -> {move(Direction.UP);});
-        this.downButton.setOnAction(e -> {move(Direction.DOWN);});
-        this.leftButton.setOnAction(e -> {move(Direction.LEFT);});
-        this.rightButton.setOnAction(e -> {move(Direction.RIGHT);});
+        this.upButton.setOnAction(e -> {
+            move(Direction.UP);
+        });
+        this.downButton.setOnAction(e -> {
+            move(Direction.DOWN);
+        });
+        this.leftButton.setOnAction(e -> {
+            move(Direction.LEFT);
+        });
+        this.rightButton.setOnAction(e -> {
+            move(Direction.RIGHT);
+        });
     }
 
     /**
@@ -112,6 +121,8 @@ public class GameControlPane extends GridPane implements GameUIComponent {
         // TODO:? Place the move buttons to appropriate position of the pane.
         GridPane a = new GridPane();
         a.setAlignment(Pos.CENTER);
+        a.setHgap(5);
+        a.setVgap(5);
         a.add(upButton, 2, 1);
         a.add(leftButton, 1, 2);
         a.add(rightButton, 3,2);

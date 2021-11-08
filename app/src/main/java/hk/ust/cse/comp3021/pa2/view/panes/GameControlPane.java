@@ -81,9 +81,7 @@ public class GameControlPane extends GridPane implements GameUIComponent {
         GridPane.setFillWidth(undoButton, true);
 
         // TODO:? Add event handler for the click event of the undo button.
-        this.undoButton.setOnAction(e -> {
-            performUndo();
-        });
+        this.undoButton.setOnAction(e -> performUndo());
     }
 
     /**
@@ -91,18 +89,10 @@ public class GameControlPane extends GridPane implements GameUIComponent {
      */
     private void setMoveButtonsHandler() {
         // TODO:? Add event handler for the click event of the move buttons.
-        this.upButton.setOnAction(e -> {
-            move(Direction.UP);
-        });
-        this.downButton.setOnAction(e -> {
-            move(Direction.DOWN);
-        });
-        this.leftButton.setOnAction(e -> {
-            move(Direction.LEFT);
-        });
-        this.rightButton.setOnAction(e -> {
-            move(Direction.RIGHT);
-        });
+        this.upButton.setOnAction(e -> move(Direction.UP));
+        this.downButton.setOnAction(e -> move(Direction.DOWN));
+        this.leftButton.setOnAction(e -> move(Direction.LEFT));
+        this.rightButton.setOnAction(e -> move(Direction.RIGHT));
     }
 
     /**
